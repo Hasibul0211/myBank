@@ -5,12 +5,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>my bank</title>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
 <body>
+    <header>
+        <h2 class="text-5xl text-center uppercase mt-5 font-bold text-purple-800">welcome to my bank
+        </h2>
+    </header>
+    <main>
+        <section class="flex h-full bg-gradient-to-r from-green-400 to-blue-500">
+            <div class="w-1/2">
+                <h1 class="text-6xl font-bold uppercase text-center mt-32 mx-12 p-12 text-indigo-900">
+                    hhs bank limited</h1>
+            </div>
+            <div class="w-1/2 p-20 mt-12">
 
+                <form action="" class="w-full border-2 p-8 h-60 bg-red-300">
+                    <h3 class="text-2xl text-center capitalize pb-2 font-bold text-purple-800">Please login here</h3>
+                    <input type="email" placeholder="Your Email" required
+                        class="block w-1/2 mb-2 border-0 h-8 mx-auto pl-2 rounded-md outline-none focus:bg-yellow-300">
+                    <input type="password" placeholder="Your Password" required
+                        class="block w-1/2 mb-2 border-0 h-8 mx-auto pl-2 rounded-md outline-none focus:bg-yellow-300">
+                    <button
+                        class="bg-gradient-to-r from-green-400 to-blue-500 focus:from-pink-500 focus:to-yellow-500 w-16 rounded-md ml-40 text-white p-1"
+                        id="login-btn">Login</button>
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+
+    <script src="/script.js"></script>
 </body>
 
 </html>
