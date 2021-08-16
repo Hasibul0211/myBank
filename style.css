@@ -1,0 +1,31 @@
+@media only screen and (max-width: 680px) {
+    .text-5xl {
+        font-size: 30px;
+    }
+    .small-sce{
+        flex-direction: column;
+
+    }
+    .p-12{
+        padding: 1px;
+    }
+    .text-6xl{
+        font-size: 40px;
+        color: whitesmoke;
+    }
+    .mx-12{
+        margin: 15% auto 10px auto;
+    }
+    .w-1\/2{
+        width: 100%;
+    }
+    .small-sce{
+        margin-top: 8%;
+    }
+    .p-20{
+        padding: 15px;
+    }
+    .h-full {
+        height: 650px;
+    }
+}

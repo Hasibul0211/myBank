@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>banking page</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-blue-200">
+
+    <header>
+        <h1 class="text-center text-4xl text-blue-500 font-bold uppercase mt-5">Your banking place</h1>
+    </header>
+    <main>
+        <!-- balance and transaction section -->
+        <section class="mt-12">
+            <div class="grid grid-cols-3 gap-8 w-3/4 mx-auto">
+                <div class="bg-yellow-500 text-center
+                p-8 font-bold rounded-md">
+                    <h3 class="text-3xl">Deposit</h3>
+                    <h4 class="text-3xl text-white">$<span id="deposit-total">0.00</span> </h4>
+                </div>
+                <div class="bg-purple-500 text-center
+                p-8 font-bold rounded-md">
+                    <h3 class="text-3xl">Withdraw</h3>
+                    <h4 class="text-3xl text-white">$<span id="withdraw-total">0.00</span></h4>
+                </div>
+                <div class="bg-green-700 text-center
+                p-8 font-bold rounded-md">
+                    <h3 class="text-3xl">Balance</h3>
+                    <h4 class="text-3xl text-white">$<span id="balance-total">1000.00</span></h4>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- enter section  -->
+        <section class="mt-12">
+            <div class="grid grid-cols-2 gap-8 w-3/4 mx-auto">
+                <div class="p-8 bg-purple-300 rounded-xl">
+                    <h3 class="text-center capitalize text-2xl mb-2 text-gray">enter deposited amount</h3>
+                    <div>
+                        <input type="text" placeholder="Enter Deposit Amount"
+                            class="block w-3/4 mb-2 border-0 h-8 mx-auto pl-2 rounded-md outline-none focus:bg-yellow-300"
+                            id="diposite-input">
+                        <button
+                            class="bg-gradient-to-r from-green-400 to-blue-500 focus:from-pink-500 focus:to-yellow-500 w-20 rounded-md ml-40 text-white p-1"
+                            type="submit" id="deposit-btn">Deposit</button>
+                    </div>
+                </div>
+                <div class="p-8 bg-red-400 rounded-xl">
+                    <h3 class="text-center capitalize text-2xl mb-2 text-gray">enter Withdrawal amount</h3>
+                    <div>
+                        <input type="text" placeholder="Enter Withdrawal Amount"
+                            class="block w-3/4 mb-2 border-0 h-8 mx-auto pl-2 rounded-md outline-none focus:bg-yellow-300"
+                            id="withdraw-input">
+                        <button
+                            class="bg-gradient-to-r from-green-400 to-blue-500 focus:from-pink-500 focus:to-yellow-500 w-20 rounded-md ml-40 text-white p-1"
+                            type="submit" id="withdraw-btn">Withdraw</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="/banking.js"></script>
+</body>
+
+</html>
