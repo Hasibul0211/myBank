@@ -1,6 +1,6 @@
 @media only screen and (max-width: 680px) {
     .text-5xl {
-        font-size: 30px;
+        font-size: 20px;
     }
     .small-sce{
         flex-direction: column;
@@ -27,5 +27,18 @@
     }
     .h-full {
         height: 650px;
+    }
+    .ml-40{
+        margin-left: 3px;
+    }
+    .text-4xl{
+        font-size: 30px;
+    }
+    .grid{
+        display: flex;
+        flex-direction: column;
+    }
+    .w-3\/4{
+        width: 98%;
     }
 }
